@@ -9,6 +9,7 @@ $(document).keydown(function () {
         $("#level-title").text("Level " + level);
         nextSequence();
         started = true;
+        $("#mobile").addClass("hide");
     }
 });
 
@@ -17,6 +18,8 @@ $("#mobile").click(function () {
         $("#level-title").text("Level " + level);
         nextSequence();
         started = true;
+        $("#mobile").addClass("hide");
+
     }
 });
 
@@ -73,6 +76,7 @@ function checkAnswer(currentLevel) {
             $("body").removeClass("game-over");
         }, 200)
         $("#level-title").text("Press Any Key to Restart");
+        $("#mobile").removeClass("hide");
         $("#mobile").text("RESET");
         startOver();
     }

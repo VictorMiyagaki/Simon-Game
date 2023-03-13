@@ -6,7 +6,7 @@
 
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #b92b9b;
 }
 
 .center {
@@ -23,16 +23,28 @@ body {
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
-  margin: 2%;
+  font-size: 1.5rem;
+  margin: 5px;
   color: #FEF2BF;
 }
 
 #mobile {
   font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
-  margin: 2%;
+  font-size: 1.5rem;
+  margin: 5px;
   color: #FEF2BF;
+  cursor: pointer;
+  animation: flashing 1s infinite alternate;
+}
+
+@keyframes flashing {
+  from {
+    color: #FEF2BF;
+  }
+
+  to {
+    color: #000000;
+  }
 }
 
 .container {
@@ -91,6 +103,10 @@ body {
   background-color: grey;
 }
 
+.hide {
+  visibility: hidden;
+}
+
 @media (max-width: 1000px) {
   .container {
     width: 800px;
@@ -102,8 +118,9 @@ body {
     width: 380px;
   }
 
-  #level-title {
+  #level-title,
+  #mobile {
     font-size: 2rem;
-    margin-bottom: 6%;
+    margin-bottom: 20px;
   }
 }
