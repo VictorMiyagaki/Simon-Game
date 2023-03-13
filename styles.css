@@ -28,6 +28,13 @@ body {
   color: #FEF2BF;
 }
 
+#mobile {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin: 2%;
+  color: #FEF2BF;
+}
+
 .container {
   width: 500px;
   height: 500px;
